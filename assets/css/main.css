@@ -9,9 +9,15 @@
     user-select: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
 body {
     background: url('../image/backgroud.jpg') no-repeat;
+    background-size: 100% 100%;
 }
 
 .header {
@@ -29,7 +35,6 @@ body {
 }
 
 .buttons {
-    width: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,12 +42,13 @@ body {
 
 #minimize {
     background-color: #fff;
-    padding: 0 10px;
-    width: 15px;
+    padding: 0 7px;
+    width: 4px;
     height: 4px;
     cursor: pointer;
     border: none;
     border-radius: 4px;
+    margin-right: 20px;
 }
 
 #close {
