@@ -8,10 +8,14 @@
     -ms-user-select: none;
     user-select: none;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-html, body {
-    height: 560px;
-    width: 980px;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -29,6 +33,7 @@ body {
 }
 
 .brand {
+    margin: 5px 0 0 0;
     width: 110px;
     height: 55px;
     background: url('../image/logo.png') no-repeat;
@@ -62,10 +67,12 @@ body {
     font-weight: bold;
     text-align: center;
 }
-#close:hover{
+
+#close:hover {
     color: red;
 }
-#minimize:hover{
+
+#minimize:hover {
     background: #001242;
 }
 
@@ -75,7 +82,9 @@ body {
     height: 338px;
     background-color: rgba(27, 34, 69, 0.4);
     backdrop-filter: blur(10px);
+    overflow: hidden;
 }
+
 .title {
     width: 100%;
     height: 50px;
@@ -85,37 +94,106 @@ body {
     align-items: center;
     justify-content: center;
 }
-.title h4{
+
+.title h4 {
     color: #fff;
     font-weight: 100;
     text-align: center;
 }
+
 .content-news {
     display: flex;
     justify-content: center;
 }
+
 .article {
     background: rgba(0, 18, 66, 0.4);
     height: 39px;
     width: 219px;
     margin: 10px 0px;
-    padding: 10px  5px 0 5px;
+    padding: 10px 5px 0 5px;
     border: 1px rgba(0, 18, 66, 0.4) solid;
 }
+
 .title-news {
     font-size: 12px;
     color: #fff;
 }
+
 .author-date {
     padding: 5px 0;
     font-size: 10px;
     color: #fff;
     text-align: right;
 }
-.author-date span { 
+
+.author-date span {
     color: red;
 }
+
 .article:hover {
     cursor: pointer;
     background: rgba(90, 97, 116, 0.4);
+}
+
+.clearfix {
+    clear: both;
+}
+
+.options {
+    margin: 31px auto 0 auto;
+    width: 90%;
+    height: 90px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-download {
+    width: 644px;
+}
+
+.progress-download p {
+    color: #fff;
+    width: 644px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.progress-download p span {
+    float: right;
+}
+
+.progress-bar {
+    width: 644px;
+    height: 10px;
+}
+
+progress {
+    border-radius: 2px;
+    width: 644px;
+    height: 22px;
+}
+
+progress::-webkit-progress-bar {
+    padding: 1px 1px;
+    background: url('../image/progress-bar-bg.png') no-repeat;
+    background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+    height: 8px;
+    background-color: #a8d59d;
+}
+
+.play-game {
+    cursor: pointer;
+    width: 164px;
+    height: 64px;
+    background: url('../image/bnt_start.png') no-repeat;
+}
+
+.play-game:hover {
+    -webkit-box-shadow: 0px 0px 24px 2px rgba(110, 30, 110, 0.54);
 }

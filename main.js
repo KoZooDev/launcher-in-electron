@@ -11,8 +11,9 @@ function createWindow() {
         minWidth: 980,
         minHeight: 560,
         maxHeight: 980,
-        maxHeight:560,
+        maxHeight: 560,
         resizable: true,
+        icon: 'MuOnline.ico',
         frame: false,
         enableRemoteModule: true,
         webPreferences: {
