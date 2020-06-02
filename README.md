@@ -1,2 +1,2 @@
 # launcher-in-electron
- launcer
+ launcher
