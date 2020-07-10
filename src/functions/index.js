@@ -1,5 +1,6 @@
 const remote = require('electron').remote;
 
+function CreateWindowDrag(){
     var windowTopBar
     windowTopBar = document.createElement('div')
     windowTopBar.style.width = "100%"
@@ -9,7 +10,7 @@ const remote = require('electron').remote;
     windowTopBar.style.top = windowTopBar.style.left = 0
     windowTopBar.style.webkitAppRegion = "drag"
     document.body.appendChild(windowTopBar)
-
+}
 
 function closewindow() {
     var window = remote.getCurrentWindow();
@@ -20,3 +21,5 @@ function minimize() {
     var window = remote.getCurrentWindow();
     window.minimize();
 }
+
+CreateWindowDrag()
